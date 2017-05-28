@@ -32,6 +32,10 @@ h2 {
   padding: 1em;
 }
 
+h2:hover{
+  background-color: darkred;
+}
+
 h3 {
   padding-left: 1em;
   padding-right: 1em;
@@ -59,8 +63,13 @@ nav a {
   color: grey;
 }
 
+nav a:hover{
+  color: darkred;
+}
+
 a{
   color: grey;
+  text-decoration: none;
 }
 
 .logo{
@@ -99,7 +108,7 @@ a{
 }
 
 .dropdown-content a:hover {
-	background-color: darkblue;
+	background-color: darkred;
 	color: white;
 }
 
@@ -108,11 +117,7 @@ a{
 }
 
 .dropdown:hover .dropbtn {
-    background-color: darkblue;
-}
-
-a{
-  text-decoration: none;
+    background-color: darkred;
 }
 
 .wit{
