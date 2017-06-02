@@ -4,7 +4,6 @@ var app = express();
 
 app.set('nieuwsFile', require('./config/nieuws.json'));
 app.set('categorieenFile', require('./config/categorieen.json'));
-app.set('auteurFile', require('./config/auteur.json'));
 
 
 app.set("views", path.resolve(__dirname, "views"));
@@ -15,7 +14,7 @@ app.use(express.static('public'))
 app.use(require("./routes/root_router"));
 app.use(require("./routes/nieuws_router"));
 app.use(require("./routes/categorieen_router"));
-app.use(require("./routes/auteur_router"));
+
 
 app.listen(app.get('port'), function() {
   console.log('Node luistert op poort', app.get('port'));

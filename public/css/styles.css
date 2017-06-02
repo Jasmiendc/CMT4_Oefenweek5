@@ -3,22 +3,26 @@ body {
   width: 90%;
   margin: 25px auto;
   line-height: 1.4em;
-  background-color: #eeee;
 }
 
 section {
-  margin-bottom: 4em;
-  border-bottom: 4px solid black;
+  margin-top: 4em;
   background-color: white;
+}
+
+.section-categorie{
+  border-bottom: 4px solid orange;
 }
 
 img {
   max-width: 100%;
+  min-width: 100%;
 }
 
 p {
   margin: 10px 0;
   padding: 0.5em 1em 0em 1em;
+  font-family: 'Bubbler One', sans-serif;
 }
 
 ul{
@@ -26,45 +30,22 @@ ul{
   list-style: disc;
 }
 
+h1{
+  font-family: 'Bad Script', cursive;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+}
+
 h2 {
   background-color: black;
   color: white;
   padding: 1em;
+  font-family: 'Bubbler One', sans-serif;
 }
 
 h2:hover{
-  background-color: darkred;
-}
-
-h3 {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 2em;
-  font-weight: bold;
-  border-top: 1px solid black;
-  text-transform: uppercase;
-}
-
-nav {
-  margin-top: 1em;
-  margin-bottom: 3em;
-  border: 4px solid black;
-  padding: 1em;
-  width: 90%;
-  display: inline-flex;
-  justify-content: space-around;
-  text-align: center;
-  background-color: white;
-}
-
-nav a {
-  display: inline-block;
-  margin-right: 5px;
-  color: grey;
-}
-
-nav a:hover{
-  color: darkred;
+  background-color: orange;
 }
 
 a{
@@ -72,23 +53,20 @@ a{
   text-decoration: none;
 }
 
-.logo{
-  width: 30%;
-}
-
 .dropbtn {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-left: 25%;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
-    float: right;
+    display: block;
+    margin-left: 25%;
 }
 
 .dropdown-content {
@@ -102,13 +80,15 @@ a{
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    text-align: center;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: darkred;
+	background-color: orange;
 	color: white;
 }
 
@@ -117,7 +97,7 @@ a{
 }
 
 .dropdown:hover .dropbtn {
-    background-color: darkred;
+    background-color: orange;
 }
 
 .wit{
@@ -128,17 +108,53 @@ a{
   color: black;
   text-transform: uppercase;
   font-size: 0.8em;
-  background-color: white;
-  margin: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
   padding: 1em;
-  width: 40%;
-  border-top: 4px solid black;
+  width: 90%;
+  border-bottom: 4px solid orange;
+  border-top: 4px solid orange;
 }
 
 .kader{
-  border: 4px solid black;
+  border: 4px solid orange;
   background-color: white;
   color: black;
   margin-bottom: 2em;
   margin-top: 2em;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(200, 150, 0, 0.5);
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.footer{
+  border-top: 4px solid orange;
 }

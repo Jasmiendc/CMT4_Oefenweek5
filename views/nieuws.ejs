@@ -6,10 +6,17 @@
 <section>
 
     <h2>  <%- item.titel %>  </h2>
-    <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+    <div class="container">
+      <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+      <div class="overlay">
+        <div class="text">
+          <%- item.auteur %>
+          <br>
+          <%- item.datum %>
+        </div>
+      </div>
+    </div>
 
-    <p> <%- item.datum %> </p>
-    <p> -  <%- item.auteur %></p>
 
     <p> <%- item.body %> </p>
     <img src="/img/<%- item.afbeeldingl %>" alt="<%- item.titel %>">
