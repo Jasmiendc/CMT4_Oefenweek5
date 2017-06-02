@@ -155,6 +155,56 @@ a{
   -ms-transform: translate(-50%, -50%);
 }
 
+.boodschap{
+  font-weight: lighter;
+  color: orange;
+  padding-left: 1em;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.boodschap2{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.bericht{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.form-group{
+  margin: 1em;
+}
+
+.form-control{
+  border: 2px solid orange;
+  border-radius: 5px;
+  display: block;
+  padding: 1em;
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+textarea{
+  height: 10em;
+}
+
+#button{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border: 2px solid white;
+  margin-bottom: 3em;
+}
+
+#button:hover{
+  background-color: white;
+  border: 2px solid orange;
+  color: orange;
+}
+
 .footer{
   border-top: 4px solid orange;
 }
