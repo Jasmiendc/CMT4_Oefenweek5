@@ -1,3 +1,5 @@
+<% include header %>
+
 <div class="dropdown">
   <button class="dropbtn">Menu</button>
   <div class="dropdown-content">
@@ -7,31 +9,26 @@
   </div>
 </div>
 
-<% include header %>
+<nav>
+  <h4>Auteurs:</h4>
+  <% for (var i = 0; i < auteur.length; i++) { %>
+    <a href="/auteur/<%- i %>"><%- auteur[i] %></a>
+  <% } %>
+</nav>
 
   <% var teller = 1; %>
   <% nieuws.forEach(function(item){ %>
-
+    <p class='categoriekader'>
+      <%- item.categorieen %>
+    </p>
     <section>
-      <div class='categoriekader'>
-        <%- item.categorieen %>
-      </div>
         <h2>  <a class='wit' href=/items/<%- item.id %>><%- item.titel %></a> </h2>
-        <div class="container">
-          <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
-          <div class="overlay">
-            <div class="text">
-              <%- item.auteur %>
-              <br>
-              <%- item.datum %>
-            </div>
-          </div>
-        </div>
+        <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+        <p><%- item.datum %></p>
         <p><%- item.samenvatting %></p>
-        <br>
-        <a class="boodschap" href="/nieuwe-boodschap">Voeg als eerste een bericht toe!</a>
-        <br><vr>
+        <p> - <%- item.auteur %></p>
     </section>
     <% teller++;}); %>
-<br>
+
+
 <% include footer %>

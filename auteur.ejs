@@ -8,18 +8,18 @@
   </div>
 </div>
 
-<h2 class='kader'>Nieuwsitems voor de categorie <%- categorieen[id] %></h2>
+<h2 class='kader'>Nieuwsitems voor auteurs <%- auteur[id] %></h2>
 
   <% for (var i = 0; i < items.length; i++) { %>
-    <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+    <% if (items[i].auteur.indexOf(auteur[id]) !== -1) { %>
       <section>
-          <h2>  <a class='wit' href=/items/<%- items[i].id %>><%- items[i].titel %></a>  </h2>
+          <h2>  <a class='wit' href="/auteur/<%- i %>"><%- items[i].titel %></a>   </h2>
           <img src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
           <p> <%- items[i].datum %> </p>
           <p>
             <%- items[i].samenvatting %>
           </p>
-          <p> - <%- items[i].auteur %></p>
+          <p> Auteur: <%- items[i].auteur %></p>
       </section>
     <% } %>
   <% } %>
